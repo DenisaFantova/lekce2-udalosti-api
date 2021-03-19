@@ -69,7 +69,7 @@ Funkce, která ztiší hlasitost předaného prvku
 
 function ztisit(elementSelector) {
     let audioElement = document.querySelector(elementSelector);
-    audioElement.volume = 0.2;
+    audioElement.volume = 0;
 }
 
 /* 
