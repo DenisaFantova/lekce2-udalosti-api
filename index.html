@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JavaScript a DOM</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Source+Sans+Pro:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<p class="odstavec" onmouseover="tucnyText()" onmouseout="normalniText()">
+		V elipse spí lev.
+	</p>
+
+	<button onclick="cervenyText()">
+		Červený po kliknutí
+	</button>
+
+	<button onclick="vetsiText()">
+		Větší po kliknutí
+	</button>
+	<button onclick="zvetsitPismo()">
+		Druhé tlačítko na větší text
+	</button>
+
+	<div>
+	<p class="audio-ovladac">Audio ovladač</p>	
+
+	<audio id="js-audio" src="audio/dingdingdang.mp3" preload="auto"></audio>
+
+	<button onclick="prehraj('#js-audio')">Play</button>
+	<button onclick="zastav('#js-audio')">Pause</button>
+	<button onclick="ztisit('#js-audio')">Volume potichu</button>
+	<button onclick="normal('#js-audio')">Volume tak akorát</button>
+	<button onclick="zesil('#js-audio')">Volume UP!</button>
+	<button onclick="odzacatku('#js-audio')">Hraj od začátku</button>
+
+	</div>	
+
+	<script src="main.js"></script>	
+
+</body>
+</html>
+
