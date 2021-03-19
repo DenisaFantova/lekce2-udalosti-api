@@ -1,6 +1,6 @@
 // tady je místo pro náš program
 
-let odstavec = document.querySelector('.odstavec');
+let odstavec = document.querySelector('p');
 
 let tlacitko = document.querySelector('button');
 
@@ -26,23 +26,11 @@ function cervenyText() {
 ÚKOL 2
 ----------------------------------------------------------*/
 
-function vetsiText() {
-    odstavec.classList.add('vetsi-text');
-}
-
-
-function zvetsitPismo() {
+ function zvetsitPismo() {
     let velikostPisma = parseInt(odstavec.style.fontSize);
-    let vetsiPismo = velikostPisma + 1;
-    return odstavec.style.fontSize = 'vetsiPismo';
-    console.log(vetsiPismo); //test
+    let vetsiPismo = velikostPisma + 1 + 'px';
+    odstavec.style.fontSize = vetsiPismo;
 }
-
-
-
-// od Filipa
-// onclick="zvetsitPismo('.odstavec', 1);"
-// parseInt(element.style.fontSize);
 
 
 /*----------------------------------------------------------
@@ -53,6 +41,7 @@ function zvetsitPismo() {
 *
 * @param {string} elementSelector
 */
+
 
 function prehraj(elementSelector) {
     let audioElement = document.querySelector(elementSelector);
@@ -110,7 +99,6 @@ Funkce, která vrátí na začátek předaný prvek a začne hrát, i pokud je p
 *
 * @param {string} elementSelector
 */
-
 
 function odzacatku(elementSelector) {
     let audioElement = document.querySelector(elementSelector);

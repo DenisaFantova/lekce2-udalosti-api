@@ -21,21 +21,12 @@ body {
 	color: black;
 }
 
-
-.odstavec {
-    font-size: 16px;
-}
-
 .tucny-text {
     font-weight: bold;
 }
 
 .cerveny-text {
     color: red;
-}
-
-.vetsi-text {
-    font-size: 17px;
 }
 
 .audio-ovladac {
